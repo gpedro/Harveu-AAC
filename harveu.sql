@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: 127.0.0.1
--- Data de Criação: 28-Jan-2014 às 18:31
+-- Data de Criação: 28-Jan-2014 às 20:54
 -- Versão do servidor: 5.5.32
 -- versão do PHP: 5.4.19
 
@@ -39,14 +39,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `creation` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Extraindo dados da tabela `accounts`
---
-
-INSERT INTO `accounts` (`id`, `name`, `password`, `type`, `premdays`, `lastday`, `email`, `creation`) VALUES
-(1, '', '78fb755cfff4cf2e588ef55b5e4d5da7c397f4b4', 1, 0, 0, '', 0);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -533,6 +526,21 @@ INSERT INTO `posts` (`id`, `title`, `body`, `created`, `modified`, `situacao`) V
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `roles`
+--
+
+CREATE TABLE IF NOT EXISTS `roles` (
+  `id` int(10) unsigned NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `situacao` enum('ativado','desativado') NOT NULL DEFAULT 'ativado',
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `server_config`
 --
 
@@ -572,38 +580,14 @@ CREATE TABLE IF NOT EXISTS `tile_store` (
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `account_id` int(11) DEFAULT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `role` enum('god','cm','gm','tutor','player') NOT NULL DEFAULT 'player',
-  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `modified` datetime DEFAULT NULL,
+  `id` int(10) unsigned NOT NULL,
+  `role_id` int(11) NOT NULL,
+  `username` varchar(80) NOT NULL,
+  `password` varchar(80) NOT NULL,
+  `realname` varchar(100) DEFAULT NULL,
   `situacao` enum('ativado','desativado') NOT NULL DEFAULT 'ativado',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
-
---
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`id`, `account_id`, `username`, `password`, `role`, `created`, `modified`, `situacao`) VALUES
-(1, NULL, 'Avuenja', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 00:15:19', 'ativado'),
-(2, NULL, 'Marcelo', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 00:23:02', 'ativado'),
-(3, NULL, 'Avuenja', 'da976cd68dd1eaf648768285cc081ecaf1ca46395bbe7c53fb', 'player', '0000-00-00 00:00:00', '2014-01-17 00:36:40', 'ativado'),
-(4, NULL, 'Avuenja', '1456f03f3387dcafdad1d836dce824db', 'player', '0000-00-00 00:00:00', '2014-01-17 00:37:40', 'ativado'),
-(5, NULL, 'Avuenja', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 00:39:13', 'ativado'),
-(6, NULL, 'Avuenja', 'da976cd68dd1eaf648768285cc081ecaf1ca46395bbe7c53fb', 'player', '0000-00-00 00:00:00', '2014-01-17 00:54:46', 'ativado'),
-(7, NULL, 'ZÃ©', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 01:11:51', 'ativado'),
-(8, NULL, 'Harveu', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 01:13:47', 'ativado'),
-(9, NULL, 'zao', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 01:16:42', 'ativado'),
-(10, NULL, 'ole', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 01:17:31', 'ativado'),
-(11, NULL, 'vau', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-17 01:20:12', 'ativado'),
-(12, NULL, 'teste', '49f1d33c518d1fa868165f2e5d4352c7e9face9f', 'player', '0000-00-00 00:00:00', '2014-01-24 01:02:21', 'ativado'),
-(13, NULL, 'Flinkton', '2875377e0fd96328731dbe9d5d43ecdf1a0b6c2b', 'player', '0000-00-00 00:00:00', '2014-01-24 03:52:41', 'ativado'),
-(14, NULL, 'luanluciano', 'a9d2b9507d0ee71431bf02f0e0f2318bebc80c6a', 'player', '0000-00-00 00:00:00', '2014-01-24 11:13:18', 'ativado'),
-(15, NULL, 'luan', '8f9afe1874ff35f5d50f7f9c30e98ca2dbf3da18', 'player', '0000-00-00 00:00:00', '2014-01-24 12:35:05', 'ativado'),
-(16, NULL, 'renato', '3a741abf4992825ba481721948669d4f553db228', 'player', '0000-00-00 00:00:00', '2014-01-24 16:24:51', 'ativado');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Constraints for dumped tables
