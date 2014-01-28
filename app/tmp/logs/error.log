@@ -803,3 +803,50 @@ Stack Trace:
 #6 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2014-01-28 20:38:14 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Model.php(3498): Model->setSource('users')
+#1 C:\xampp\htdocs\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 C:\xampp\htdocs\lib\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 C:\xampp\htdocs\lib\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('User', 'fields')
+#4 C:\xampp\htdocs\app\View\Users\login.ctp(5): FormHelper->create('User', Array)
+#5 C:\xampp\htdocs\lib\Cake\View\View.php(929): include('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\lib\Cake\View\View.php(891): View->_evaluate('C:\xampp\htdocs...', Array)
+#7 C:\xampp\htdocs\lib\Cake\View\View.php(460): View->_render('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#9 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#10 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-28 20:53:10 Error: [MissingComponentException] Component class MswiComponent could not be found.
+Exception Attributes: array (
+  'class' => 'MswiComponent',
+  'plugin' => false,
+)
+Request URL: /roles
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Mswi', Array)
+#1 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(RolesController))
+#2 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(181): Controller->constructClasses()
+#3 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RolesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-28 20:53:16 Error: [MissingComponentException] Component class MswiComponent could not be found.
+Exception Attributes: array (
+  'class' => 'MswiComponent',
+  'plugin' => false,
+)
+Request URL: /roles/consultar
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Mswi', Array)
+#1 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(RolesController))
+#2 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(181): Controller->constructClasses()
+#3 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RolesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

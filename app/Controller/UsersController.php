@@ -31,23 +31,6 @@ class UsersController extends AppController {
             }
         }
     }
-	#Account creator
-	function account() {
-		#carrega model
-		$this->loadModel('Account');
-		$user = $this->User->find('first');
-		pr($user);exit();
-		#verifica se salvou com sucesso
-        if ($this->Account->save($this->request->data)) {
-        	$this->account();
-            #mensagem de sucesso
-			$this->Session->setFlash('The user has been saved.', 'default', array('class' => 'alert alert-success'));
-            #redireciona para a index
-			$this->redirect(array('controller' => 'posts', 'action' => 'index'));
-        } else {
-            $this->Session->setFlash('The user could not be saved. Please, try again.', 'default', array('class' => 'alert alert-warning'));
-        }
-	}
 	#Login User
 	function login() {
 		#nome da page

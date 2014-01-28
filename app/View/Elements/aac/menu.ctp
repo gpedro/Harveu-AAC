@@ -44,7 +44,7 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
 			<li <?php if($this->params['controller'] == 'users' && $this->params['action'] == 'register') { ?> class="active" <?php } ?>>
-				<a href="">Register</a>
+				<a href="<?php echo Configure::read('site.url'); ?>users/register">Register</a>
 			</li>
 			<li <?php if($this->params['controller'] == 'users' && $this->params['action'] == 'login') { ?> class="active" <?php } ?>>
 				<a href="<?php echo Configure::read('site.url'); ?>users/login">Log in</a>
@@ -52,4 +52,3 @@
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
-<!-- <?php #echo Configure::read('site.url'); ?>users/register -->
