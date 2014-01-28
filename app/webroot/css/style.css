@@ -2,24 +2,36 @@
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 }
+body {
+	background-image: url('../img/bg.png');
+	background-attachment: fixed;
+}
 #topo {
 	padding: 10px 5px 30px 5px;
 	text-align: center;
 	/*background: radial-gradient(ellipse at center, #e3ecf0 0%, #c0d4df 100%);*/
-	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-	-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 1px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	-moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+	background-image: url('../img/bg2.png');
+	background-attachment: fixed;
 }
 .content {
-	min-height: 500px;
+	min-height: 300px;
 }
 #footer {
 	text-align: right;
+	margin: 5px 0 10px 0;
+	color: #DDDDDD;
 }
-/*News configs*/
+/*News adjusts*/
 .new-body {
 	text-align: justify;
 }
 .new-footer {
 	text-align: right;
+}
+/*Noise*/
+.navbar-default {
+	background-image: url('../img/noise.png');
 }

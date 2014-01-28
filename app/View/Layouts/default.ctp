@@ -3,13 +3,16 @@
 	<head>
 		<?php echo $this->Html->charset(); ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title><?php echo $title_for_layout; ?></title>
+		<title><?php echo $title_for_layout.' :: '.Configure::read('site.name').' - '.Configure::read('site.slogan'); ?></title>
 		<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('style');
 		echo $this->Html->css('bootstrap');
 		echo $this->Html->script('https://code.jquery.com/jquery.js');
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('funcoes');
+		echo $this->Html->script('ckeditor');
+		echo $this->Html->script('../adapters/jquery');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -29,6 +32,6 @@
 			</div>
 			<div id="footer">&copy; <?php echo date('Y').' - '.Configure::read('site.name'); ?></div>
 		</div>
-		<?php echo $this->element('sql_dump'); ?>
+		<?php #echo $this->element('sql_dump'); ?>
 	</body>
 </html>

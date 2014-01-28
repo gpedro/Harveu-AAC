@@ -86,7 +86,7 @@
 	Configure::write('App.encoding', 'UTF-8');
 	
 /**
- * Configurações ajustaveis da aplicação
+ * Configurações ajustaveis da aplicação, Nome server, Slogan e url... Em ordens respectivas.
  */
  	Configure::write('site.name', 'Harveu AAC');
 	Configure::write('site.slogan', 'Now your server has a super AAC!');
