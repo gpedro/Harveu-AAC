@@ -6,6 +6,10 @@ class AdminController extends AppController {
 	var $uses = array();
 	#helpers usados na view
 	var $helpers = array('Html', 'Form', 'Js');
+	#Função que carrega as permissões
+	function beforeFilter() {
+        $this->Auth->allow('*');
+    }
 	#Index admin
 	function index() {
 		$this->redirect(array('controller' => 'admin', 'action' => 'painel'));

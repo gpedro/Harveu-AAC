@@ -24,6 +24,9 @@ body {
 	margin: 5px 0 10px 0;
 	color: #DDDDDD;
 }
+#footer a {
+	color: #DDDDDD;
+}
 /*News adjusts*/
 .new-body {
 	text-align: justify;

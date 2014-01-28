@@ -788,3 +788,18 @@ Stack Trace:
 #11 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #12 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-01-28 19:15:18 Error: [MissingViewException] View file "C:\xampp\htdocs\app\View\Pages\credits.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\app\\View\\Pages\\credits.ctp',
+)
+Request URL: /pages/credits
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\View\View.php(457): View->_getViewFileName('credits')
+#1 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(952): View->render('credits', NULL)
+#2 C:\xampp\htdocs\app\Controller\PagesController.php(69): Controller->render('credits')
+#3 [internal function]: PagesController->display('credits')
+#4 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

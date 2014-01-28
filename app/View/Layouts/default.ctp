@@ -30,7 +30,9 @@
 				<?php echo $this->Session->flash(); ?>
 				<?php echo $this->fetch('content'); ?>
 			</div>
-			<div id="footer">&copy; <?php echo date('Y').' - '.Configure::read('site.name'); ?></div>
+			<div id="footer">
+				&copy; <?php echo date('Y').' - '.Configure::read('site.name'); ?> | Engine: <b><?php echo $this->Html->link('Harveu AAC', array('controller' => 'pages', 'action' => 'display', 'credits')); ?></b>
+			</div>
 		</div>
 		<?php #echo $this->element('sql_dump'); ?>
 	</body>

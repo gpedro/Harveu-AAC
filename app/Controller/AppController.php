@@ -40,10 +40,10 @@ class AppController extends Controller {
     );
     function beforeFilter() {
     	Security::setHash('sha1');
-        $this->Auth->allow('index');
+        $this->Auth->allow();
     }
 	
-	#Funções OTServer Status
+#Funções OTServer Status ---------------------------------------
 	function Connect($host, $port) {
 		$this->Host = $host;
 		$this->Port = $port;
