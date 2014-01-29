@@ -33,6 +33,21 @@
 					</div>
 				</div>
 				<div class="form-group">
+					<label for="inputPassword" class="col-sm-2 control-label">Password repeat</label>
+					<div class="col-sm-10">
+						<?php echo $this->Form->input(
+							'password2', 
+							array(
+								'class' 		=> 'form-control',
+								'id' 			=> 'inputPassword',
+								'placeholder' 	=> 'Password repeat',
+								'type'			=> 'password',
+								'label' 		=> FALSE
+							)
+						); ?>
+					</div>
+				</div>
+				<div class="form-group">
 					<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 					<div class="col-sm-10">
 						<?php echo $this->Form->input(
@@ -47,6 +62,30 @@
 						); ?>
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="inputRlname" class="col-sm-2 control-label">Real name</label>
+					<div class="col-sm-10">
+						<?php echo $this->Form->input(
+							'realname', 
+							array(
+								'class' 		=> 'form-control',
+								'id' 			=> 'inputRlname',
+								'placeholder' 	=> 'Real name',
+								'label' 		=> FALSE
+							)
+						); ?>
+					</div>
+				</div>
+				<?php echo $this->Form->hidden(
+						'role_id', 
+						array(
+							'class' 		=> 'form-control',
+							'id' 			=> 'inputRole',
+							'placeholder' 	=> 'Seu grupo é player',
+							'value'			=> 2,
+							'label' 		=> FALSE
+						)
+					); ?>
 			    <div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
 						<?php echo $this->Form->input(

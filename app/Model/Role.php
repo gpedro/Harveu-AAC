@@ -5,7 +5,7 @@ class Role extends AppModel {
 	#tabela usada no model
 	var $useTable = 'roles';
 	#Ações que serão usadas no controller
-	var $actsAs = array('Containable', 'Acl' => 'requester');
+	var $actsAs = array('Containable');
 	#Field
 	public $displayField = 'name';
 	#Ligação com a tabela Users
@@ -33,25 +33,21 @@ class Role extends AppModel {
 		'name' => array(
 			'required' => array(
 				'rule'			=> array('notEmpty'),
-				'message'		=> "<script>SetaErro('Grupo_name'); SetaTextoErro('Role', 'Name', 'Preenchimento Obrigatório!');</script>",
 				'allowEmpty'	=> false,
 				'required'		=> true,
 			),
 			'unique'	=> array(
 				'rule'			=> array('isUnique'),
-				'message'		=> "<script>SetaErro('Grupo_name'); SetaTextoErro('Role', 'Name', 'O Grupo informado já está cadastrado');</script>",
 				'allowEmpty'	=> true,
 				'required'		=> true
 			),
 			'format_minlenght'	=> array(
 				'rule'			=> array('minLength', '2'),
-				'message'		=> "<script>SetaErro('Grupo_name'); SetaTextoErro('Role', 'Name', 'Informe no mínimo 2 caracteres');</script>",
 				'allowEmpty'	=> true,
 				'required'		=> true
 			),
 			'format_maxlenght'	=> array(
 				'rule'			=> array('maxLength', '100'),
-				'message'		=> "<script>SetaErro('Grupo_name'); SetaTextoErro('Role', 'Name', 'Informe no máximo 100 caracteres');</script>",
 				'allowEmpty'	=> true,
 				'required'		=> true
 			)

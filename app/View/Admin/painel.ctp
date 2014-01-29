@@ -15,5 +15,20 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-sm-2 col-md-2">
+			<div class="thumbnail text-center">
+				<div class="caption">
+					<h3>Roles</h3>
+					<p>
+						<a href="<?php echo Configure::read('site.url'); ?>admin/roles" class="btn btn-primary" role="button" title="View roles">
+							<span class="glyphicon glyphicon-list"></span>
+						</a> 
+						<a href="<?php echo Configure::read('site.url'); ?>admin/add_role" class="btn btn-success" role="button" title="Added role">
+							<span class="glyphicon glyphicon-plus"></span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

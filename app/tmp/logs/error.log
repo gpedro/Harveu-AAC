@@ -850,3 +850,51 @@ Stack Trace:
 #3 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(RolesController), Object(CakeRequest), Object(CakeResponse))
 #4 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-01-29 17:28:00 Error: [MissingTableException] Table aros for model Aro was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'aros',
+  'class' => 'Aro',
+  'ds' => 'default',
+)
+Request URL: /admin/add_role
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Model.php(3498): Model->setSource('aros')
+#1 C:\xampp\htdocs\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 C:\xampp\htdocs\lib\Cake\Model\Model.php(1539): Model->schema()
+#3 C:\xampp\htdocs\lib\Cake\Model\Behavior\AclBehavior.php(120): Model->create()
+#4 [internal function]: AclBehavior->afterSave(Object(Role), true, Array)
+#5 C:\xampp\htdocs\lib\Cake\Utility\ObjectCollection.php(132): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 C:\xampp\htdocs\lib\Cake\Event\CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#8 C:\xampp\htdocs\lib\Cake\Model\Model.php(1861): CakeEventManager->dispatch(Object(CakeEvent))
+#9 C:\xampp\htdocs\app\Controller\AdminController.php(43): Model->save(Array)
+#10 [internal function]: AdminController->add_role()
+#11 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#12 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-29 18:07:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /admin/add_role
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `ha...', Array)
+#2 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `ha...')
+#3 C:\xampp\htdocs\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Role), Array, Array)
+#4 C:\xampp\htdocs\app\Controller\AdminController.php(43): Model->save(Array)
+#5 [internal function]: AdminController->add_role()
+#6 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#7 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-29 18:40:23 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\xampp\htdocs\app\Model\User.php, line 131]
+2014-01-29 18:40:23 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /users/register
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 131)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 131, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\xampp\htdocs...', 131, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
