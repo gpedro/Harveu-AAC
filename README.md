@@ -1,12 +1,15 @@
 Harveu-AAC
 ==========
 
-Now your server has a super AAC
+Made 100% in CakePHP using API Tibia and TibiaRegex
 
-Harveus is a mega incremented and AAC, which is much more than just a creator of accounts for your server! It will help you in multiple tasks and you will realize how easy is to have an Open Tibia Server!
-
-Counting on a single site system, leaving even more authentic and without ado and complications for your server!
+Harveu is a mega AAC for Open Tibia servers. Maintaining flexibility and ease for both administrators and players to ... Containing an administrative part to envy to any AAC, the Harveu OTAdmin has functions that allow you to restart the server, control commands and other items that would be used in the game. 
+Now you can more easily administer your server and give more comfort to the players.
 
 Support in: www.TibiaKing.com
 
-Updates: finish news function
+Done:
+=====
+News system, html editor with CKEditor
+
+User registration (registration only to stir the site)
