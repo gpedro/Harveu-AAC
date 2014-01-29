@@ -7,6 +7,6 @@ Harveus is a mega incremented and AAC, which is much more than just a creator of
 
 Counting on a single site system, leaving even more authentic and without ado and complications for your server!
 
-Support in: www.TibiaKing.com or www.harveu.argosco.com.br
+Support in: www.TibiaKing.com
 
-Licensed MIT license
+Updates: finish news function
