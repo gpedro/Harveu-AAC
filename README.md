@@ -1,15 +1,14 @@
-Harveu-AAC
-==========
+Harveu-AAC 
+========== 
 
-Made 100% in CakePHP for TFS 1.0
+Feito 100% com CakePHP para servidores TFS 1.0 e PyOT 
 
-Harveu is a mega AAC for Open Tibia servers. Maintaining flexibility and ease for both administrators and players to ... Containing an administrative part to envy to any AAC, the Harveu OTAdmin has functions that allow you to restart the server, control commands and other items that would be used in the game. 
-Now you can more easily administer your server and give more comfort to the players.
+Harveu é um mega AAC para servidores Open Tibia. Vem para manter a flexibilidade e facilidade para os administradores e para os jogadores ... Contendo uma parte administrativa de dar inveja a qualquer AAC, o Harveu conta com funções de um OTAdmin, que permitem você reiniciar o servidor, e outros comandos de controle como talkactions. Agora você pode mais facilmente administrar o servidor e dar mais conforto aos jogadores. 
 
-Support in: www.OTserv.com.br
+:3 
 
-Done:
-=====
-News system, html editor with CKEditor
+Já feito: 
+===== 
+Sistema de News, editor html com CKEditor 
 
-User registration (registration only to stir the site)
+O registro do usuário (registro apenas para o site, não integrado com o server...)
