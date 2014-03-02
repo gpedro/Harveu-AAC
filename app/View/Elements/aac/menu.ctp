@@ -7,8 +7,8 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand visible-xs" href="<?php echo Configure::read('site.url'); ?>">
-			<?php echo Configure::read('site.name'); ?>
+		<a class="navbar-brand visible-xs" href="<?php echo url; ?>">
+			<?php echo server_name; ?>
 		</a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
