@@ -64,10 +64,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'harveu',
+		'host' => hostname,
+		'login' => username,
+		'password' => password,
+		'database' => database,
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

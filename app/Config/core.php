@@ -86,13 +86,6 @@
 	Configure::write('App.encoding', 'UTF-8');
 	
 /**
- * Configurações ajustaveis da aplicação, Nome server, Slogan e url... Em ordens respectivas.
- */
- 	Configure::write('site.name', 'Harveu AAC');
-	Configure::write('site.slogan', 'Now your server has a super AAC!');
-	Configure::write('site.url', 'http://localhost/');
-
-/**
  * To configure CakePHP *not* to use mod_rewrite and to
  * use CakePHP pretty URLs, remove these .htaccess
  * files:

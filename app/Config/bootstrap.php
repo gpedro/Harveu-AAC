@@ -25,6 +25,9 @@
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
+#Importa para usar as configurações do servidor e aac
+Configure::load('config');
+
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
  *
