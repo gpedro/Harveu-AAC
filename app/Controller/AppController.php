@@ -32,16 +32,8 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	public $components = array(
-        'Session',
-        'Auth' => array(
-            'loginRedirect' => array('controller' => 'posts', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'posts', 'action' => 'index')
-        )
-    );
-    function beforeFilter() {
-    	Security::setHash('sha1');
-        $this->Auth->allow();
-    }
+        'Session'
+	);
 	
 #Funções OTServer Status ---------------------------------------
 	function Connect($host, $port) {

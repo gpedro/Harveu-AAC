@@ -989,3 +989,80 @@ Stack Trace:
 #7 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #8 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2014-04-14 17:22:16 Error: [MissingActionException] Action AdminController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admin',
+)
+Request URL: /Harveu-AAC/admin/admin/add_post
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:22:22 Error: [MissingActionException] Action AdminController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admin',
+)
+Request URL: /Harveu-AAC/admin/admin/add_post
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:22:30 Error: [MissingActionException] Action AdminController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AdminController',
+  'action' => 'admin',
+)
+Request URL: /Harveu-AAC/admin/admin/add_post
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:27:47 Error: [MissingActionException] Action CommunityController::characterscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'characterscommunity',
+)
+Request URL: /Harveu-AAC/community/characterscommunity/highscores
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:27:58 Error: [MissingActionException] Action CommunityController::characterscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'characterscommunity',
+)
+Request URL: /Harveu-AAC/community/characterscommunity/highscores
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:28:00 Error: [MissingActionException] Action CommunityController::characterscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'characterscommunity',
+)
+Request URL: /Harveu-AAC/community/characterscommunity/highscores
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:28:02 Error: [MissingActionException] Action CommunityController::characterscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'characterscommunity',
+)
+Request URL: /Harveu-AAC/community/characterscommunity/highscores
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
