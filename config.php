@@ -1,11 +1,11 @@
 <?php
-#Settings required for the proper functioning of ConnectsATS#
+#Settings required for the proper functioning of Harveu AAC#
 #Configuration database
 $config['Database'] = array (
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'harveu'
+	'database' => 'tfs'
 );
 #Configuration server informations
 $config['Server'] = array (
