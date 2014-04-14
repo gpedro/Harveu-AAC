@@ -10,7 +10,8 @@ $config['Database'] = array (
 #Configuration server informations
 $config['Server'] = array (
 	'name' => 'Harveu AAC',
-	'slogan' => 'Now your server has a super AAC!'
+	'slogan' => 'Now your server has a super AAC!',
+	'url' => 'http://localhost/Harveu-AAC/'
 );
 #Configuration website and engine data
 $config['Engine'] = array(

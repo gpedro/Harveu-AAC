@@ -9,7 +9,7 @@ define('server_name', $config['Server']['name']);
 #Slogan do servidor
 define('server_slogan', $config['Server']['slogan']);
 #Url do site
-define('url', 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+define('url',  $config['Server']['url']);
 #Definição do banco de dados
 define('hostname', $config['Database']['hostname']);
 define('username', $config['Database']['username']);

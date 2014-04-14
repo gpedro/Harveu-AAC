@@ -1066,3 +1066,47 @@ Stack Trace:
 #1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-04-14 17:47:31 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /Harveu-AAC/app/webroot/
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:47:45 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /Harveu-AAC/app/webroot/
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:54:13 Error: [MissingActionException] Action CommunityController::guildscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'guildscommunity',
+)
+Request URL: /Harveu-AAC/community/guildscommunity/guild_war
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-14 17:54:19 Error: [MissingActionException] Action CommunityController::guildscommunity() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommunityController',
+  'action' => 'guildscommunity',
+)
+Request URL: /Harveu-AAC/community/guildscommunity/guild_war
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CommunityController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
