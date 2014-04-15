@@ -31,9 +31,15 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	// Componentes usados por todos os controllers
 	public $components = array(
         'Session'
 	);
+	
+	// Método de funções carregadas antes de qualquer coisa
+	function beforeFilter() {
+		$this->layout = layoutAAC; // Definição de layout padrão do AAC
+	}
 	
 #Funções OTServer Status ---------------------------------------
 	function Connect($host, $port) {

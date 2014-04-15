@@ -8,7 +8,7 @@
 			<span class="icon-bar"></span>
 		</button>
 		<a class="navbar-brand visible-xs" href="<?php echo url; ?>">
-			<?php echo server_name; ?>
+			<?php echo nameServer; ?>
 		</a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->

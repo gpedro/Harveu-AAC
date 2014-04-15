@@ -1,17 +1,16 @@
 <?php
-#Não mexa neste arquivo! Só mexa se tiver o conhecimento!#
-#Requisita o config.php na index
-require_once '../../config.php';
+// Requerimento das configurações personalizadas definidas pelo usuário
+require_once ROOT.'/config.php';
 
-#Definições de constantes
-#Nome do servidor
-define('server_name', $config['Server']['name']);
-#Slogan do servidor
-define('server_slogan', $config['Server']['slogan']);
-#Url do site
-define('url',  $config['Server']['url']);
-#Definição do banco de dados
+// Definição de constantes
+// Contantes de banco de dados
 define('hostname', $config['Database']['hostname']);
 define('username', $config['Database']['username']);
 define('password', $config['Database']['password']);
 define('database', $config['Database']['database']);
+// Constantes do servidor
+define('nameServer', $config['Server']['name']);
+define('titleServer', $config['Server']['title']);
+// Constante da Engine
+define('layoutAAC', $config['Engine']['layout']);
+define('url',  $config['Server']['url']);

@@ -1,47 +1,51 @@
 <?php
-// Settings required for the proper functioning of Harveu AAC
-// Configuration database
-$config['Database'] = array (
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'tfs'
+// Configurações necessárias para o bom funcionamento do Harveu AAC
+// Configurações de banco de dados
+$config['Database'] = array(
+	'hostname' 	=> 'localhost',
+	'username' 	=> 'root',
+	'password' 	=> '',
+	'database' 	=> 'tfs',
 );
-// Configuration server informations
-$config['Server'] = array (
-	'name' => 'Harveu AAC',
-	'slogan' => 'Now your server has a super AAC!',
-	'url' => 'http://localhost/Harveu-AAC/'
+// Configurações de servidor
+$config['Server'] = array(
+	'name' 		=> 'Parlon RPG',
+	'title' 	=> 'Harveu AAC - The best web application for Open Tibia Servers',
+	'url' 		=> 'http://localhost/Harveu-AAC/'
 );
-$config['Cities'] = array(
-	1 => 'Main City',
-	2 => 'Second City'
-);
+// Configurações de vocações
 $config['Vocations'] = array(
-	0 => 'None',
-	1 => 'Sorcerer',
-	2 => 'Druid',
-	3 => 'Paladin',
-	4 => 'Knight',
-	5 => 'Master Sorcerer',
-	6 => 'Elder Druid',
-	7 => 'Royal Paladin',
-	8 => 'Elite Knight'
+	0 	=> 'No vocation',
+	1 	=> 'Sorcerer',
+	2 	=> 'Druid',
+	3 	=> 'Paladin',
+	4 	=> 'Knight',
+	5 	=> 'Master Sorcerer',
+	6 	=> 'Elder Druid',
+	7 	=> 'Royal Paladin',
+	8 	=> 'Elite Knight'
 );
+// Configurações de cidades
+$config['Cities'] = array(
+	0 	=> array(
+		'name' 	=> 'Thais',
+		'x' 	=> 2168,
+		'y' 	=> 1265,
+		'z' 	=> 7
+	),
+	1 	=> array(
+		'name' 	=> 'Venore',
+		'x' 	=> 1897,
+		'y' 	=> 2654,
+		'z' 	=> 6
+	)
+);
+// Configurações de mundos (servidores)
 $config['Worlds'] = array(
-	0 => 'Main world',
-	//1 => 'Second world'
+	0 	=> 'Parlon',
+	1 	=> 'Grihon'
 );
-$config['Groups'] = array(
-	0 => 'Player',
-	1 => 'Tutor',
-	2 => 'Senior Tutor',
-	3 => 'Gamemaster',
-	4 => 'Community Manager',
-	5 => 'God'
-);
-
-// Configuration website and engine data
+// Configurações de Engine
 $config['Engine'] = array(
 	'layout' 	=> 'default'
 );
