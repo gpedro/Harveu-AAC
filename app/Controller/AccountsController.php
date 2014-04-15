@@ -20,7 +20,7 @@ class AccountsController extends AppController {
 				// Se salvar os dados: 
 				if($this->Account->save($this->request->data)) {
 					$this->Session->setFlash('Conta criada com sucesso!');
-					return $this->redirect(array('controller' => 'news', 'action' => 'index'));
+					return $this->redirect(array('controller' => 'posts', 'action' => 'index'));
             	}
 			} else { // Se não:
 				$this->Session->setFlash('Erro ao criar conta!');

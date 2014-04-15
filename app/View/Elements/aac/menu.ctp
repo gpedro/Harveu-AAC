@@ -42,13 +42,24 @@
 			</li>
 			<li><a href="#">Shop</a></li>
 		</ul>
+		<?php if(!empty($this->Session->read('account'))) { ?>
 		<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
-			<li <?php if($this->params['controller'] == 'users' && $this->params['action'] == 'register') { ?> class="active" <?php } ?>>
-				<a href="<?php echo url; ?>users/register">Register</a>
+			<li <?php if($this->params['controller'] == 'accounts' && $this->params['action'] == 'manager') { ?> class="active" <?php } ?>>
+				<a href="<?php echo url; ?>accounts/manager">Manager account</a>
 			</li>
-			<li <?php if($this->params['controller'] == 'users' && $this->params['action'] == 'login') { ?> class="active" <?php } ?>>
-				<a href="<?php echo url; ?>users/login">Log in</a>
+			<li>
+				<a href="<?php echo url; ?>accounts/logout">Logout</a>
 			</li>
 		</ul>
+		<?php } else { ?>
+		<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
+			<li <?php if($this->params['controller'] == 'accounts' && $this->params['action'] == 'create') { ?> class="active" <?php } ?>>
+				<a href="<?php echo url; ?>accounts/create">Register</a>
+			</li>
+			<li <?php if($this->params['controller'] == 'accounts' && $this->params['action'] == 'login') { ?> class="active" <?php } ?>>
+				<a href="<?php echo url; ?>accounts/login">Log in</a>
+			</li>
+		</ul>
+		<?php } ?>
 	</div><!-- /.navbar-collapse -->
 </nav>
