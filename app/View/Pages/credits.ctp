@@ -4,6 +4,7 @@
 			<legend><h3>Harveu AAC - <small class="muted">Feito com CakePHP</small></h3></legend>
 			<p><b>Desenvolvedores</b></p>
 			<p><a href="http://forums.otserv.com.br/member.php?352149-Avuenja" target="_blank">Avuenja</a> - Desenvolvedor oficial do Harveu AAC.</p>
+			<p><a href="http://www.gpedro.net/" target="_blank">GPedro</a> - Colaborador.</p>
 			<br />
 			<p>Gostaria de deixar meu agradecimentos a todos os usuários do Harveu e as comunidades que o receberam de portas abertas!</p>
 			<br />
