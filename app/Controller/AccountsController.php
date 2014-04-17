@@ -19,11 +19,19 @@ class AccountsController extends AppController {
 				$this->request->data['Account']['password'] = sha1($this->request->data['Account']['password']); // Encrypta a senha
 				// Se salvar os dados: 
 				if($this->Account->save($this->request->data)) {
-					$this->Session->setFlash('Conta criada com sucesso!');
+					$this->Session->setFlash( // Mensagem de sucesso
+						'Conta criada com sucesso!.',
+						'default',
+						array('class'=>'alert alert-success')
+					);
 					return $this->redirect(array('controller' => 'posts', 'action' => 'index'));
             	}
 			} else { // Se não:
-				$this->Session->setFlash('Erro ao criar conta!');
+				$this->Session->setFlash( // Mensagem de erro
+					'Erro ao criar conta!',
+					'default',
+					array('class'=>'alert alert-danger')
+				);
 			}
 		}
 	}
@@ -43,6 +51,7 @@ class AccountsController extends AppController {
 						'Account.password' => $this->data['Account']['password']
 					),
 					'fields' => array(
+						'Account.id',
 						'Account.name',
 						'Account.password'
 					)
@@ -51,12 +60,17 @@ class AccountsController extends AppController {
 			if(!empty($account)) { // Se a conta existe:
 				if(empty($this->Session->read('account'))) { // Se não existe nenhuma sessão criada:
 					$accountSession = $this->Session->write('account', $account['Account']['name']);
+					$accountSession = $this->Session->write('account_id', $account['Account']['id']);
 					$this->redirect(array('action' => 'manager'));
 				} else { // Se não:
 					$this->Session->destroy(); // Destrói a sessão
 				}
 			} else { // Se não:
-				$this->Session->setFlash('Conta incorreta! Verifique os dados digitados, ou crie uma conta.');
+				$this->Session->setFlash( // Mensagem de erro
+					'Conta incorreta! Verifique os dados digitados, ou crie uma conta.!',
+					'default',
+					array('class'=>'alert alert-danger')
+				);
 			}
 		}
 	}
@@ -70,11 +84,43 @@ class AccountsController extends AppController {
 		}
 	}
 	
+	// Método de gerenciamento de conta
+	function change($id) {
+		if(!empty($this->Session->read('account'))) { // Se existe uma sessão criada:
+			$this->Account->id = $id; // Atribuimos o id passado para o id do registro
+			if($this->request->is('get')) { // Se a requisição for do tipo GET:
+				$this->request->data = $this->Account->read(); // Exibe na view
+			} else { // Se não:
+				if($this->Account->save($this->request->data)) { // Se salvar os dados:
+					$this->Session->setFlash( // Mensagem de sucesso
+						'Dados salvos com sucesso!.',
+						'default',
+						array('class'=>'alert alert-success')
+					);
+					$this->redirect(array('action' => 'manager')); // Redireciona
+				} else { // Se não:
+					$this->Session->setFlash( // Mensagem de erro
+						'O registro não pode ser salvo!',
+						'default',
+						array('class'=>'alert alert-danger')
+					);
+				}
+			}
+		} else { // Se não:
+			$this->redirect('/');// Redireciona o usuário
+		}
+	}
+	
 	// Método de logout
 	function logout() {
 		// Se for uma sessão valida
 		if ($this->Session->valid()) {
 			$this->Session->destroy(); // Destrói a sessão
+			$this->Session->setFlash( // Mensagem de erro
+				'Você saiu da sua conta!',
+				'default',
+				array('class'=>'alert alert-info')
+			);
 			$this->redirect('/');// Redireciona o usuário
 		}
 	}

@@ -1237,3 +1237,50 @@ Stack Trace:
 #1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-04-17 20:45:44 Error: [MissingActionException] Action AccountsController::change() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountsController',
+  'action' => 'change',
+)
+Request URL: /Harveu-AAC/accounts/change
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-17 20:46:33 Error: [MissingViewException] View file "C:\xampp\htdocs\Harveu-AAC\app\View\Accounts\change.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\Harveu-AAC\\app\\View\\Accounts\\change.ctp',
+)
+Request URL: /Harveu-AAC/accounts/change
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-04-17 21:07:53 Error: [MissingPluginException] Plugin Account could not be found.
+Exception Attributes: array (
+  'plugin' => 'Account',
+)
+Request URL: /Harveu-AAC/accounts/change/1
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Core\App.php(365): CakePlugin::path('Account')
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Core\App.php(226): App::pluginPath('Account')
+#2 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Core\App.php(547): App::path('Model', 'Account')
+#3 [internal function]: App::load('id')
+#4 [internal function]: spl_autoload_call('id')
+#5 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Utility\ClassRegistry.php(145): class_exists('id')
+#6 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\Helper\FormHelper.php(163): ClassRegistry::init('Account.id', true)
+#7 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\Helper\FormHelper.php(196): FormHelper->_getModel('Account.id')
+#8 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\Helper\FormHelper.php(346): FormHelper->_introspectModel('Account.id', 'key')
+#9 C:\xampp\htdocs\Harveu-AAC\app\View\Accounts\change.ctp(7): FormHelper->create('Account.id', Array)
+#10 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\View.php(929): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\View.php(891): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\Harveu-AAC\lib\Cake\View\View.php(460): View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#14 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#15 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#16 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
