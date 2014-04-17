@@ -1284,3 +1284,25 @@ Stack Trace:
 #15 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
 #16 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #17 {main}
+2014-04-18 01:31:18 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'tfs\'',
+  'enabled' => true,
+)
+Request URL: /Harveu-AAC/
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#4 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Model.php(3498): Model->setSource('posts')
+#5 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#6 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\Harveu-AAC\app\Controller\PostsController.php(21): Model->find('all', Array)
+#8 [internal function]: PostsController->index()
+#9 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
