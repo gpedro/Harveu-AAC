@@ -1,12 +1,17 @@
-Harveu-AAC 
+Harveu Automatic Account Creator
 ========== 
 
-Feito 100% com CakePHP para servidores sobre as engines TFS 1.0 e PyOT 
+### Requirements
+* Apache or Nginx (not tested)
+* PHP 5.5+
+* MySQL
 
-Harveu é um mega AAC para servidores Open Tibia. Vem para manter a flexibilidade e facilidade para os administradores e para os jogadores ... Contendo uma parte administrativa de dar inveja a qualquer AAC, o Harveu conta com funções de um OTAdmin, que permitem você reiniciar o servidor, e outros comandos de controle como talkactions. Agora você pode mais facilmente administrar o servidor e dar mais conforto aos jogadores.
+### Installation
+1. Download a version compatible with your OTServer.
+2. Extract the files from the downloaded archive and put all of them in your folder.
+3. Import the **harveu.sql** file in the docs folder for your database.
 
-Harveu foi atualizado, no momento conta com o sistema de create account já integrado com a engine TFS...
-
-Próximos passos:
-	Acabar o gerenciamento de conta e criação de personagens.
-	Fazer ranks e outras paginas.
+### To Do
+- Account Managment
+- Highscores
+- Another pages
