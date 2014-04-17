@@ -71,6 +71,7 @@ class AccountsController extends AppController {
 					'default',
 					array('class'=>'alert alert-danger')
 				);
+				$this->redirect(array('action' => 'login'));// Redireciona o usuário
 			}
 		}
 	}
