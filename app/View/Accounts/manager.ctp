@@ -21,11 +21,14 @@
 				<tbody>
 					<tr>
 						<td>1</td>
-						<td>Avuenja</td>
+						<td><a href="#">Avuenja</a></td>
 						<td>Paladin</td>
 						<td>499</td>
 						<td>Today 23:45</td>
-						<td>Delete | Edit</td>
+						<td>
+							<button type="button" class="btn btn-default btn-xs" title="Editar"><span class="glyphicon glyphicon-pencil"></span></button>
+							<button type="button" class="btn btn-default btn-xs" title="Excluir"><span class="glyphicon glyphicon-trash"></span></button>
+						</td>
 					</tr>
 				</tbody>
 			</table>

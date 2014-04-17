@@ -1184,3 +1184,56 @@ Request URL: /Harveu-AAC/news
 Stack Trace:
 #0 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-04-17 18:50:57 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /Harveu-AAC/admin
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-04-17 18:51:25 Error: [MissingActionException] Action PostsController::adicionar() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'adicionar',
+)
+Request URL: /Harveu-AAC/posts/adicionar
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-17 19:15:53 Error: [MissingActionException] Action AccountsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountsController',
+  'action' => 'edit',
+)
+Request URL: /Harveu-AAC/accounts/edit
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-17 19:16:03 Error: [MissingActionException] Action AccountsController::change() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountsController',
+  'action' => 'change',
+)
+Request URL: /Harveu-AAC/accounts/change
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-04-17 19:18:30 Error: [MissingActionException] Action AccountsController::change() could not be found.
+Exception Attributes: array (
+  'controller' => 'AccountsController',
+  'action' => 'change',
+)
+Request URL: /Harveu-AAC/accounts/change
+Stack Trace:
+#0 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\Harveu-AAC\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AccountsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\Harveu-AAC\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
