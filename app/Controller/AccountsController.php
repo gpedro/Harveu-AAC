@@ -80,6 +80,11 @@ class AccountsController extends AppController {
 		if(!empty($this->Session->read('account'))) { // Se existe uma sessão criada:
 			
 		} else { // Se não:
+			$this->Session->setFlash( // Mensagem de erro
+				'Você não tem permissão para acessar isto! Faça o login ou crie uma conta!',
+				'default',
+				array('class'=>'alert alert-danger')
+			);
 			$this->redirect('/');// Redireciona o usuário
 		}
 	}
@@ -107,6 +112,11 @@ class AccountsController extends AppController {
 				}
 			}
 		} else { // Se não:
+			$this->Session->setFlash( // Mensagem de erro
+				'Você não tem permissão para acessar isto! Faça o login ou crie uma conta!',
+				'default',
+				array('class'=>'alert alert-danger')
+			);
 			$this->redirect('/');// Redireciona o usuário
 		}
 	}
