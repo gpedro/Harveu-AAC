@@ -18,4 +18,4 @@ Harveu Automatic Account Creator
 - Another pages
 
 ### Harveu Book
-* [Informações Harveu AAC (pt-br)](https://github.com/Avuenja/Harveu-AAC.wiki.git)
+* [Informações Harveu AAC (pt-br)](https://github.com/Avuenja/Harveu-AAC/wiki/Informa%C3%A7%C3%B5es-Harveu-AAC-(Pt-br))
