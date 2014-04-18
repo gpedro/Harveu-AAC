@@ -70,6 +70,9 @@
 					<li <?php if($this->params['controller'] == 'accounts' && $this->params['action'] == 'manager') { ?> class="active" <?php } ?>>
 						<a href="<?php echo url; ?>accounts/manager">Manager</a>
 					</li>
+					<li <?php if($this->params['controller'] == 'players' && $this->params['action'] == 'create') { ?> class="active" <?php } ?>>
+						<a href="<?php echo url; ?>players/create">Create player</a>
+					</li>
 					<li <?php if($this->params['controller'] == 'accounts' && $this->params['action'] == 'change') { ?> class="active" <?php } ?>>
 						<a href="<?php echo url; ?>accounts/change/<?php echo $this->Session->read('account_id'); ?>">Change details</a>
 					</li>
