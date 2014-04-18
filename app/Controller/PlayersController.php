@@ -11,6 +11,13 @@ class PlayersController extends AppController {
 	function create() {
 		// Seta o nome da view
 		$this->set('title_for_layout', 'Criar personagem');
+		$towns = array();
+		foreach (Configure::read('Cities') as $city_id => $city) {
+			$towns = array(
+				$city_id => $city['name']
+			);
+		}
+		pr($towns);
 		if(!empty($this->Session->read('account'))) { // Se existe uma sessão criada:
 			// Se a requisição for do tipo POST:
 			if($this->request->is('post')) {

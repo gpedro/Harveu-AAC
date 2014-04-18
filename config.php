@@ -13,8 +13,15 @@ $config['Server'] = array(
 	'title' 	=> 'Harveu AAC - The best web application for Open Tibia Servers',
 	'url' 		=> 'http://localhost/Harveu-AAC/'
 );
-// Configurações de vocações
+// Configurações de vocações ativas para a escolha do player
 $config['Vocations'] = array(
+	1 	=> 'Sorcerer',
+	2 	=> 'Druid',
+	3 	=> 'Paladin',
+	4 	=> 'Knight'
+);
+// Configurações de todas as vocações existentes no servidor
+$config['AllVocations'] = array(
 	0 	=> 'No vocation',
 	1 	=> 'Sorcerer',
 	2 	=> 'Druid',
