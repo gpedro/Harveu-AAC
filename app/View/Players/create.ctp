@@ -21,7 +21,11 @@
 				<div class="form-group">
 					<label for="inputTown" class="col-sm-3 control-label">Sexo:</label>
 					<div class="col-sm-7">
-						<?php print $this->Form->input('sex', array('class' => 'form-control', 'placeholder' => 'Escolha seu sexo', 'label' => FALSE)); ?>
+						<?php 
+						$options = array('1' => 'Male', '0' => 'Female');
+						$attributes = array('legend' => false);
+						echo $this->Form->radio('sex', $options, $attributes);
+						?>
 					</div>
 				</div>
 				<div class="form-group">

@@ -13,11 +13,10 @@ class PlayersController extends AppController {
 		$this->set('title_for_layout', 'Criar personagem');
 		$towns = array();
 		foreach(Configure::read('Cities') as $city_id => $city) {
-			$towns = array(
+			$towns += array(
 				$city_id => $city['name']
 			);
 		}
-		pr($towns);
 		$this->set('towns', $towns);
 		if(!empty($this->Session->read('account'))) { // Se existe uma sessão criada:
 			// Se a requisição for do tipo POST:
