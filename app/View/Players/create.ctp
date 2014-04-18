@@ -27,7 +27,7 @@
 				<div class="form-group">
 					<label for="inputTown" class="col-sm-3 control-label">Cidade:</label>
 					<div class="col-sm-7">
-						<?php print $this->Form->input('town_id', array('type' => 'select', 'class' => 'form-control', 'label' => FALSE, 'options' => Configure::read('Cities'), 'empty' => 'Escolha sua cidade')); ?>
+						<?php print $this->Form->input('town_id', array('type' => 'select', 'class' => 'form-control', 'label' => FALSE, 'options' => $towns, 'empty' => 'Escolha sua cidade')); ?>
 					</div>
 				</div>
 				<div class="form-group">
