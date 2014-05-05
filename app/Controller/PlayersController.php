@@ -18,7 +18,7 @@ class PlayersController extends AppController {
 			);
 		}
 		$this->set('towns', $towns);
-		if(!empty($this->Session->read('account'))) { // Se existe uma sessão criada:
+		if(isset($this->Session->read('account'))) { // Se existe uma sessão criada:
 			// Se a requisição for do tipo POST:
 			if($this->request->is('post')) {
 				$this->Player->create(); // Cria o registro
