@@ -62,7 +62,7 @@
 			</li>
 			<li><a href="#">Shop</a></li>
 		</ul>
-		<?php if(!empty($this->Session->read('account'))) { ?>
+		<?php if($this->Session->read('account')) { ?>
 		<ul class="nav navbar-nav navbar-right" style="margin-right: 0px;">
 			<li <?php if($this->params['controller'] == 'accounts') { ?> class="active" <?php } ?> class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
