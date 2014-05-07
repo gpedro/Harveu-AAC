@@ -58,7 +58,7 @@ class AccountsController extends AppController {
 				)
 			);
 			if(!empty($account)) { // Se a conta existe:
-				if(!isset($this->Session->read('account'))) { // Se não existe nenhuma sessão criada:
+				if(!$this->Session->check('account')) { // Se não existe nenhuma sessão criada:
 					$accountSession = $this->Session->write('account', $account['Account']['name']);
 					$accountSession = $this->Session->write('account_id', $account['Account']['id']);
 					$this->redirect(array('action' => 'manager'));
@@ -78,7 +78,7 @@ class AccountsController extends AppController {
 	
 	// Método de gerenciamento de conta
 	function manager() {
-		if(isset($this->Session->read('account'))) { // Se existe uma sessão criada:
+		if($this->Session->check('account')) { // Se existe uma sessão criada:
 			
 		} else { // Se não:
 			$this->Session->setFlash( // Mensagem de erro
@@ -92,7 +92,7 @@ class AccountsController extends AppController {
 	
 	// Método de gerenciamento de conta
 	function change($id) {
-		if(isset($this->Session->read('account'))) { // Se estiver setada a sessão:
+		if($this->Session->check('account')) { // Se estiver setada a sessão:
 			$this->Account->id = $id; // Atribuimos o id passado para o id do registro
 			if($this->request->is('get')) { // Se a requisição for do tipo GET:
 				$this->request->data = $this->Account->read(); // Exibe na view
