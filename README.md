@@ -10,4 +10,4 @@ Harveu Automatic Account Creator
 * [Informações Harveu AAC (pt-br)](https://github.com/Avuenja/Harveu-AAC/wiki/Informa%C3%A7%C3%B5es-Harveu-AAC-(Pt-br))
 * [Tutorials](https://github.com/Avuenja/Harveu-AAC/wiki/Tutorials)
 
-**[Harveu Forum](http://forums.otserv.com.br/index.php/forum/381-harveu-aac/)**
+**[Harveu Forum](http://goo.gl/qywlYD)**
