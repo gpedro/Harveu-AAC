@@ -3,7 +3,7 @@ class AccountsController extends AppController {
 	// Nome do controller
 	var $name = 'Accounts';
 	// Model usado no controller
-	var $uses = array('Account');
+	var $uses = array('Account', 'Player');
 	// Helpers usados na view
 	var $helpers = array('Html', 'Form', 'Js');
 	
@@ -79,7 +79,21 @@ class AccountsController extends AppController {
 	// Método de gerenciamento de conta
 	function manager() {
 		if($this->Session->check('account')) { // Se existe uma sessão criada:
+			$characters = $this->Player->find('all', array(
+				'conditions' => 
+					array(
+						'account_id' => $this->Session->read('account_id')
+					),
+				'fields' => 
+					array(
+						'Player.name',
+						'Player.level',
+						'Player.vocation',
+						'Player.lastlogin')
+					)
+			);
 			
+			$this->set('characters', $characters);
 		} else { // Se não:
 			$this->Session->setFlash( // Mensagem de erro
 				'Você não tem permissão para acessar isto! Faça o login ou crie uma conta!',

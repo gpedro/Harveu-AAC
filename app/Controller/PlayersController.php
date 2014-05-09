@@ -13,9 +13,7 @@ class PlayersController extends AppController {
 		$this->set('title_for_layout', 'Criar personagem');
 		$towns = array();
 		foreach(Configure::read('Cities') as $city_id => $city) {
-			$towns += array(
-				$city_id => $city['name']
-			);
+			$towns[$city_id] = $city['name'];
 		}
 		$this->set('towns', $towns);
 		if($this->Session->check('account')) { // Se existe uma sessão criada:
@@ -23,7 +21,7 @@ class PlayersController extends AppController {
 			if($this->request->is('post')) {
 				$this->Player->create(); // Cria o registro
 				// Se salvar os dados: 
-				if($this->Account->save($this->request->data)) {
+				if($this->Player->save($this->request->data)) {
 					$this->Session->setFlash( // Mensagem de sucesso
 						'Personagem criado com sucesso!.',
 						'default',
