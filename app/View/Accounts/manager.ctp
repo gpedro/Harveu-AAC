@@ -1,7 +1,6 @@
 <?php
 #pr($this->Session->read('account'));
 #pr($this->params);
-var_dump($characters);
 ?>
 <div class="panel panel-default">
 	<div class="panel-body">
@@ -33,12 +32,14 @@ var_dump($characters);
 							foreach($characters as $character)
 							{
 								$row = $character['Player'];
+								echo '<tr>';
 								echo '<td>'.++$i.'</td>';
 								echo '<td><a href="#">'.$row['name'].'</a></td>';
 								echo '<td>'.$row['level'].'</td>';
 								echo '<td>'.$row['vocation'].'</td>';
 								echo '<td>'.((!$row['lastlogin']) ? 'Nunca logou' : $row['lastlogin']).'</td>';
 								echo '<td><button type="button" class="btn btn-default btn-xs" title="Editar"><span class="glyphicon glyphicon-pencil"></span></button><button type="button" class="btn btn-default btn-xs" title="Excluir"><span class="glyphicon glyphicon-trash"></span></button></td>';
+								echo '</tr>';
 							}
 						}
 
