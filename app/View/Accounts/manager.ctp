@@ -1,7 +1,6 @@
 <?php
 #pr($this->Session->read('account'));
 #pr($this->params);
-var_dump($characters);
 ?>
 <div class="panel panel-default">
 	<div class="panel-body">
